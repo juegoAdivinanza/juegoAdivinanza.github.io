@@ -1,4 +1,3 @@
-
 class  MiFooter  extiende  HTMLElement  {
   connectedCallback ( )  {
     esto . innerHTML  =  / * html * /
