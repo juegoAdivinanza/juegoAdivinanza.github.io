@@ -18,22 +18,8 @@
       < p > < botón > Calcular </ botón > </ p >
       < p > < nombre de salida  = " salida " > </ salida > </ p >
     </ formulario >
-    < mi-footer > </ mi-footer >
-    < script  type = " módulo " >
-      importar  {  CtrlSaludo  }  desde  "/js/CtrlSaludo.js" ;
-      const  ctrlSaludo  =  new  CtrlSaludo ( ) ;
-      formSaludo . addEventListener ( "enviar" ,  evt  =>  {
-        prueba  {
-          evt . preventDefault ( ) ;
-          const  datos  =  new  FormData ( formSaludo ) ;
-          const  nombre  =  datos . get ( "nombre" ) ;
-          const  saludo  =  ctrlSaludo . calculaSaludo ( nombre ) ;
-          formSaludo . salida . valor  =  saludo ;
-        }  captura  ( error )  {
-          consola . log ( error ) ;
-          formSaludo . salida . valor  =  error . mensaje ;
-        }
-      } ) ;
-    </ script >
+    
+      
+   
   </ cuerpo >
 </ html >
