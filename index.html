@@ -17,8 +17,8 @@
         <p>
           <label>
             Juego
-            <select id=inGénero required>
-              <option value="">-- Selecciona --</option>
+< select  id = injuego  obligatorio >    
+  <option value="">-- Selecciona --</option>
               <option value="cumbia">Cumbia</option>
               <option value="reggaeton">Reggaeton</option>
               <option value="mariachi">Mariachi</option>
@@ -32,28 +32,29 @@
         <figure><img id=imgCantante></figure>
       </form>
 <footer><p>Copyright &copy; 2020 Trinidad Garcia Brenda.</p></footer>
+     
       <script>
         function procesa() {
           const juego = injuego.value;
           let juego = "";
-          if (juego === "cumbia") {
+          if (avidi === "cumbia") {
             juego = "Selena";
             imgCantante.src =
               "https://media.giphy.com/media/sbzP1vQOaE49y/giphy.gif";
-          } else if (juego === "reggaeton") {
+          } else if (adivi === "reggaeton") {
             juego = "Bad Bunny";
             imgCantante.src =
               "https://media.giphy.com/media/kfcsiSjQUyMvEZ1khq/giphy.gif";
-          } else if (juego === "mariachi") {
+          } else if (adivi === "mariachi") {
             juego = "Juan Gabriel";
             imgCantante.src =
               "https://media.giphy.com/media/3o6ZsYyNQumUyS9t72/giphy.gif";
           } else {
-            juego = "De ese género no conozco.";
+            adivi = "De ese género no conozco.";
             imgCantante.src =
               "https://media.giphy.com/media/XHRlxOYddWtks4426b/giphy.gif";
           }
-          outCantante.value = juego;
+          outCantante.value = adivi;
         }
       </script>
     </div>
