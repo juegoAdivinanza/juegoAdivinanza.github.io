@@ -19,11 +19,7 @@
             Juego
 < select  id = injuego  obligatorio >    
   <option value="">-- Selecciona --</option>
-              <option value="cumbia">Cumbia</option>
-              <option value="reggaeton">Reggaeton</option>
-              <option value="mariachi">Mariachi</option>
-              <option value="tango">Tango</option>
-              <option value="danzón">Danzón</option>
+<option value="adivinanza">adivinanza</option>
             </select>
           </label>
         </p>
@@ -35,27 +31,11 @@
      
       <script>
         function procesa() {
-           const avidi = injuego.value;
-          let juego = "";
- if (avidi === "cumbia") {
-            juego = "Selena";
-            imgCantante.src =
-              "https://media.giphy.com/media/sbzP1vQOaE49y/giphy.gif";
-          } else if (adivi === "reggaeton") {
-            juego = "Bad Bunny";
-            imgCantante.src =
-              "https://media.giphy.com/media/kfcsiSjQUyMvEZ1khq/giphy.gif";
-          } else if (adivi === "mariachi") {
-            juego = "Juan Gabriel";
-            imgCantante.src =
-              "https://media.giphy.com/media/3o6ZsYyNQumUyS9t72/giphy.gif";
-          } else {
-            adivi = "De ese género no conozco.";
-            imgCantante.src =
-              "https://media.giphy.com/media/XHRlxOYddWtks4426b/giphy.gif";
+           let juego = "";
+          if (avidi === "adivinanza") {
+            juego = "adivinanza";
+           
           }
-          outCantante.value = adivi;
-        }
       </script>
     </div>
   </body>
