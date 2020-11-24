@@ -13,7 +13,7 @@ function randomSquare() {
   let randomPosition = square[Math.floor(Math.random() * 9)]
   randomPosition.classList.add('mole')
 
-  //assign the id of the randomPosition to hitPosition for us to use later
+  
   hitPosition = randomPosition.id
 }
 
@@ -42,7 +42,7 @@ function countDown() {
 
   if(currentTime === 0 ) {
     clearInterval(timerId)
-    alert('GAME OVER! Your final score is' + result)
+    alert('Falicidades Tienes'  +''  + result + ''+   'Puntos')
   }
 }
 
